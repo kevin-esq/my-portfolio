@@ -1,11 +1,11 @@
-import { ReactNode } from 'react';
-import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { ThemeProvider } from '../../providers/ThemeProvider';
-import Navbar from '../../components/Navbar';
-import '../globals.css';
+import { ReactNode } from "react";
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { ThemeProvider } from "../../providers/ThemeProvider";
+import Navbar from "../../components/Navbar";
+import "../globals.css";
 
-const SUPPORTED_LOCALES = ['en', 'es'] as const;
+const SUPPORTED_LOCALES = ["en", "es"] as const;
 type Locale = (typeof SUPPORTED_LOCALES)[number];
 
 export function generateStaticParams() {
@@ -16,17 +16,20 @@ async function loadMessages(locale: Locale) {
   try {
     return (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
-    console.error(`[LOAD MESSAGES ERROR] Failed to load messages for locale "${locale}":`, error);
+    console.error(
+      `[LOAD MESSAGES ERROR] Failed to load messages for locale "${locale}":`,
+      error
+    );
     return null;
   }
 }
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
-  children: ReactNode;
-  params: Promise<{ locale: string }>;
+  readonly children: ReactNode;
+  readonly params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 

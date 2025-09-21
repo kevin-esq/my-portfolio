@@ -1,14 +1,14 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Kevin Portfolio',
-  description: 'React & .NET Developer Portfolio',
-}
+  title: "Kevin Portfolio",
+  description: "React & .NET Developer Portfolio",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return children
+  return children;
 }
