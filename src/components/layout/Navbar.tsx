@@ -6,8 +6,8 @@ import Link from "next/link";
 import { useNavigation } from "@/hooks/useNavigation";
 import { SUPPORTED_LOCALES, LOCALE_LABELS } from "@/constants/navigation";
 import { Icon, IconName } from "@/components/ui/Icons";
-import { ThemeToggle } from "@/components/ThemeToggle";
-import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/layout/ThemeToggle";
+import { cn } from "@/lib/cn";
 
 const Navbar = () => {
   const t = useTranslations("navigation");

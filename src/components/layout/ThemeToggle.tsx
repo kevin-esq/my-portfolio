@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useTheme } from "@/providers/ThemeProvider";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 
 const SunIcon = () => (
   <svg
