@@ -2,5 +2,13 @@
   "home": {
     "title": "Hola, soy Kevin",
     "subtitle": "Desarrollador React & .NET"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "language": "Idioma"
   }
 }

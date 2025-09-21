@@ -1,6 +1,8 @@
 import { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
+import { ThemeProvider } from '../../providers/ThemeProvider';
+import Navbar from '../../components/Navbar';
 import '../globals.css';
 
 const SUPPORTED_LOCALES = ['en', 'es'] as const;
@@ -50,10 +52,15 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className="font-sans antialiased bg-gray-50 text-gray-900">
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+      <body className="font-sans antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+        <ThemeProvider defaultTheme="system" storageKey="portfolio-theme">
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <Navbar />
+            <main className="pt-16 min-h-screen bg-white dark:bg-gray-900">
+              {children}
+            </main>
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
