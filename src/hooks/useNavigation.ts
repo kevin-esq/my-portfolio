@@ -1,6 +1,6 @@
-import { useLocale } from 'next-intl';
-import { usePathname } from 'next/navigation';
-import { NAVIGATION_ROUTES } from '@/constants/navigation';
+import { useLocale } from "next-intl";
+import { usePathname } from "next/navigation";
+import { NAVIGATION_ROUTES } from "@/constants/navigation";
 
 export const useNavigation = () => {
   const locale = useLocale();
@@ -8,7 +8,9 @@ export const useNavigation = () => {
 
   const isActivePath = (href: string) => {
     const localePath = `/${locale}${href}`;
-    return pathname === localePath || (href === '/' && pathname === `/${locale}`);
+    return (
+      pathname === localePath || (href === "/" && pathname === `/${locale}`)
+    );
   };
 
   const getLocalizedPath = (href: string, targetLocale?: string) => {
@@ -27,6 +29,6 @@ export const useNavigation = () => {
     pathname,
     isActivePath,
     getLocalizedPath,
-    switchLocale
+    switchLocale,
   };
 };
