@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
+import Navbar from '../../components/Navbar';
 import '../globals.css';
 
 const SUPPORTED_LOCALES = ['en', 'es'] as const;
@@ -52,7 +53,10 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className="font-sans antialiased bg-gray-50 text-gray-900">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <Navbar />
+          <main className="pt-16">
+            {children}
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>
