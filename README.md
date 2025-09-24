@@ -225,7 +225,7 @@ my-portfolio/
 
 ### 🟢 Preview Deployment
 
-[![Preview Deployment]([https://img.shields.io/badge/Preview-Deployed-brightgreen)](https://my-portfolio-kevin-esquivel.vercel.app/)
+[![Preview Deployment](https://img.shields.io/badge/Preview-Deployed-brightgreen)](https://my-portfolio-iota-seven-93.vercel.app/)
 
 ---
 
