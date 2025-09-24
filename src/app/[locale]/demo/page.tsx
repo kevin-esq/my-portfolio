@@ -1,7 +1,6 @@
 "use client";
 
 export default function DemoPage() {
-
   return (
     <div className="bg-background text-foreground min-h-screen">
       <section className="px-8 py-20">

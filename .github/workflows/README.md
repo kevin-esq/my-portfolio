@@ -10,10 +10,10 @@ Este directorio contiene los **GitHub Actions workflows** para el proyecto de po
 
 **Jobs:**
 
-* **Code Quality**: Corre ESLint, chequeos de TypeScript y Prettier
-* **Build**: Compila la aplicación Next.js
-* **Deploy**: Despliega automáticamente a **Vercel** en `main`
-* **Security**: Corre `npm audit` para detectar vulnerabilidades
+- **Code Quality**: Corre ESLint, chequeos de TypeScript y Prettier
+- **Build**: Compila la aplicación Next.js
+- **Deploy**: Despliega automáticamente a **Vercel** en `main`
+- **Security**: Corre `npm audit` para detectar vulnerabilidades
 
 **Status:** ✅ Corre en cada push a `main` y en PRs
 
@@ -25,8 +25,8 @@ Este directorio contiene los **GitHub Actions workflows** para el proyecto de po
 
 **Jobs:**
 
-* **Preview**: Despliega una preview en **Vercel**
-* **Comment**: Comenta en el PR con la URL del despliegue de preview
+- **Preview**: Despliega una preview en **Vercel**
+- **Comment**: Comenta en el PR con la URL del despliegue de preview
 
 **Status:** ✅ Corre en cada PR creado/actualizado
 
@@ -36,14 +36,14 @@ Este directorio contiene los **GitHub Actions workflows** para el proyecto de po
 
 **Triggers:**
 
-* Schedule semanal (lunes 9 AM UTC)
-* Manual dispatch desde GitHub
+- Schedule semanal (lunes 9 AM UTC)
+- Manual dispatch desde GitHub
 
 **Jobs:**
 
-* **Security Audit**: Escanea vulnerabilidades con `npm audit`
-* **CodeQL Analysis**: Análisis semántico de GitHub
-* **Dependency Review**: Revisa dependencias nuevas en PRs
+- **Security Audit**: Escanea vulnerabilidades con `npm audit`
+- **CodeQL Analysis**: Análisis semántico de GitHub
+- **Dependency Review**: Revisa dependencias nuevas en PRs
 
 **Status:** ✅ Corre semanalmente + en PRs
 
@@ -55,8 +55,8 @@ Este directorio contiene los **GitHub Actions workflows** para el proyecto de po
 
 **Updates:**
 
-* **npm packages**: Actualiza dependencias automáticamente
-* **GitHub Actions**: Mantiene workflows en la última versión
+- **npm packages**: Actualiza dependencias automáticamente
+- **GitHub Actions**: Mantiene workflows en la última versión
 
 **Status:** ✅ Dependencias al día automáticamente
 
@@ -99,16 +99,16 @@ Agrega estos badges en tu `README.md`:
 
 ### Cambiar horarios de escaneo
 
-* Edita `.github/workflows/security.yml` → cambia la expresión `cron`.
-* Edita `.github/dependabot.yml` → ajusta `schedule.interval` y `schedule.day`.
+- Edita `.github/workflows/security.yml` → cambia la expresión `cron`.
+- Edita `.github/dependabot.yml` → ajusta `schedule.interval` y `schedule.day`.
 
 ### Branch Protection (recomendado)
 
 En **Settings → Branches**, crea una regla para `main`:
 
-* ✅ Requerir que los checks pasen
-* ✅ Requerir que esté actualizado con `main`
-* ✅ Requerir revisión de code owners (opcional)
+- ✅ Requerir que los checks pasen
+- ✅ Requerir que esté actualizado con `main`
+- ✅ Requerir revisión de code owners (opcional)
 
 ---
 
@@ -116,24 +116,24 @@ En **Settings → Branches**, crea una regla para `main`:
 
 **Errores de build**
 
-* Verifica versión de Node.js (`20`)
-* Instala dependencias con `npm ci`
-* Revisa logs de build en Actions
+- Verifica versión de Node.js (`20`)
+- Instala dependencias con `npm ci`
+- Revisa logs de build en Actions
 
 **Errores de deploy**
 
-* Asegúrate de que los `VERCEL_*` secrets estén configurados
-* Revisa logs en Actions y en el dashboard de Vercel
+- Asegúrate de que los `VERCEL_*` secrets estén configurados
+- Revisa logs en Actions y en el dashboard de Vercel
 
 **Errores de seguridad**
 
-* Corre `npm audit` localmente
-* Usa `npm audit fix` para resolver vulnerabilidades
+- Corre `npm audit` localmente
+- Usa `npm audit fix` para resolver vulnerabilidades
 
 ---
 
 ## 📚 Resources
 
-* [GitHub Actions Documentation](https://docs.github.com/en/actions)
-* [Vercel GitHub Integration](https://vercel.com/docs/concepts/git/vercel-for-github)
-* [Dependabot Documentation](https://docs.github.com/en/code-security/dependabot)
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [Vercel GitHub Integration](https://vercel.com/docs/concepts/git/vercel-for-github)
+- [Dependabot Documentation](https://docs.github.com/en/code-security/dependabot)

@@ -14,12 +14,14 @@ Copy and paste these badges into your main README.md file:
 ## Alternative Badge Styles
 
 ### Flat Style:
+
 ```markdown
 [![CI/CD](https://img.shields.io/github/actions/workflow/status/kevin-esq/my-portfolio/ci.yml?branch=main&style=flat&label=CI%2FCD)](https://github.com/kevin-esq/my-portfolio/actions/workflows/ci.yml)
 [![Security](https://img.shields.io/github/actions/workflow/status/kevin-esq/my-portfolio/security.yml?branch=main&style=flat&label=Security)](https://github.com/kevin-esq/my-portfolio/actions/workflows/security.yml)
 ```
 
 ### For-the-Badge Style:
+
 ```markdown
 [![CI/CD](https://img.shields.io/github/actions/workflow/status/kevin-esq/my-portfolio/ci.yml?branch=main&style=for-the-badge&label=CI%2FCD)](https://github.com/kevin-esq/my-portfolio/actions/workflows/ci.yml)
 [![Security](https://img.shields.io/github/actions/workflow/status/kevin-esq/my-portfolio/security.yml?branch=main&style=for-the-badge&label=Security)](https://github.com/kevin-esq/my-portfolio/actions/workflows/security.yml)

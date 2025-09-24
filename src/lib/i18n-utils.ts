@@ -1,10 +1,6 @@
 type TranslationFunction = (key: string) => string;
 
-export function tOr(
-  t: TranslationFunction,
-  key: string,
-  fallback: string
-): string {
+export function tOr(t: TranslationFunction, key: string, fallback: string): string {
   try {
     const value = t(key);
     if (typeof value === "string") return value;
