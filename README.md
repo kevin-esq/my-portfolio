@@ -242,7 +242,7 @@ my-portfolio/
 
 ### 🔗 Enlaces
 
-- **Portafolio:** [kevin-esquivel.vercel.app](https://kevin-esquivel.vercel.app)
+- **Portafolio:** [kevin-esquivel.vercel.app](https://my-portfolio-iota-seven-93.vercel.app/es)
 - **GitHub:** [github.com/kevin-esq](https://github.com/kevin-esq)
 - **LinkedIn:** [linkedin.com/in/kevin-esquivel](https://linkedin.com/in/kevin-esquivel)
 
