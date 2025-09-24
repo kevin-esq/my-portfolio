@@ -8,9 +8,7 @@ export const useNavigation = () => {
 
   const isActivePath = (href: string) => {
     const localePath = `/${locale}${href}`;
-    return (
-      pathname === localePath || (href === "/" && pathname === `/${locale}`)
-    );
+    return pathname === localePath || (href === "/" && pathname === `/${locale}`);
   };
 
   const getLocalizedPath = (href: string, targetLocale?: string) => {

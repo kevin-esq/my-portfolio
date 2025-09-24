@@ -1,12 +1,15 @@
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { ThemeProvider } from "../../providers/ThemeProvider";
 import Navbar from "../../components/layout/Navbar";
 import "../globals.css";
 
 const SUPPORTED_LOCALES = ["en", "es"] as const;
 type Locale = (typeof SUPPORTED_LOCALES)[number];
+
+const STORAGE_KEY = "theme-preference";
 
 export function generateStaticParams() {
   return SUPPORTED_LOCALES.map((locale) => ({ locale }));
@@ -16,10 +19,7 @@ async function loadLocales(locale: Locale) {
   try {
     return (await import(`../../locales/${locale}.json`)).default;
   } catch (error) {
-    console.error(
-      `[LOAD LOCALES ERROR] Failed to load locales for locale "${locale}":`,
-      error
-    );
+    console.error(`[LOAD LOCALES ERROR] Failed to load locales for locale "${locale}":`, error);
     return null;
   }
 }
@@ -43,8 +43,8 @@ export default async function LocaleLayout({
     return (
       <html lang="en" suppressHydrationWarning>
         <body>
-          <main className="flex items-center justify-center min-h-screen p-8">
-            <p className="text-lg text-red-500 font-semibold">
+          <main className="flex min-h-screen items-center justify-center p-8">
+            <p className="text-lg font-semibold text-red-500">
               Something went wrong loading translations.
             </p>
           </main>
@@ -55,13 +55,40 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className="font-sans antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-        <ThemeProvider defaultTheme="system" storageKey="portfolio-theme">
+      <body
+        className="font-sans antialiased transition-colors duration-300"
+        suppressHydrationWarning
+      >
+        <Script
+          id="theme-script"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const storageKey = '${STORAGE_KEY}';
+                  const theme = localStorage.getItem(storageKey) || 'system';
+
+                  if (theme === 'system') {
+                    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                    document.documentElement.classList.add(systemTheme);
+                    document.documentElement.setAttribute('data-theme', systemTheme);
+                  } else if (theme === 'dark' || theme === 'light') {
+                    document.documentElement.classList.add(theme);
+                    document.documentElement.setAttribute('data-theme', theme);
+                  }
+                } catch (e) {
+                  document.documentElement.classList.add('light');
+                }
+              })()
+            `,
+          }}
+        />
+
+        <ThemeProvider storageKey={STORAGE_KEY}>
           <NextIntlClientProvider locale={locale} messages={locales}>
             <Navbar />
-            <main className="pt-16 min-h-screen bg-white dark:bg-gray-900">
-              {children}
-            </main>
+            <main className="min-h-screen pt-16">{children}</main>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

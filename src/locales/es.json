@@ -1,7 +1,228 @@
 {
   "home": {
-    "title": "Hola, soy Kevin",
-    "subtitle": "Desarrollador React & .NET"
+    "title": "Hola, soy",
+    "name": "Kevin Esquivel",
+    "description": "Desarrollador Full-Stack dedicado con sólida base en tecnologías web modernas y sistemas backend. Experiencia desarrollando aplicaciones usando React, Spring Boot y .NET con enfoque en código limpio y mejores prácticas.",
+    "subtitle": "Full-Stack Developer",
+    "aboutDescription": "Desarrollador Full-Stack con sólida base en tecnologías web modernas y sistemas backend. Experiencia en desarrollo de aplicaciones que resuelven problemas reales de negocio.",
+    "experienceYears": "2+",
+    "availableForWork": "Disponible para trabajar",
+    "viewMyWork": "Ver Mi Trabajo",
+    "letsTalk": "Hablemos",
+    "scrollDown": "Desplázate hacia abajo",
+    "aboutMe": "Sobre Mí",
+    "technicalSkills": "Habilidades Técnicas",
+    "experience": "Experiencia",
+    "designFocus": "Enfoque en Diseño",
+    "skillsDescription": "Herramientas y prácticas modernas para entrega rápida",
+    "experienceDescription": "años de experiencia construyendo aplicaciones web escalables y colaborando con equipos multifuncionales",
+    "designDescription": "Creo que el gran código debe ir acompañado de una experiencia de usuario excepcional e interfaces hermosas e intuitivas",
+    "featuredProjects": "Proyectos Destacados",
+    "projectsSubtitle": "Una selección de proyectos de los que estoy más orgulloso",
+    "projectDescription": "Una breve descripción de este increíble proyecto y las tecnologías utilizadas para construirlo",
+    "viewAllProjects": "Ver Todos los Proyectos",
+    "letsWorkTogether": "Trabajemos Juntos",
+    "contactDescription": "¿Tienes un proyecto en mente? Me encantaría escuchar sobre él. Creemos algo increíble juntos",
+    "getInTouch": "Hablemos",
+    "roles": {
+      "fullStack": "Desarrollador Full Stack",
+      "frontend": "Especialista Frontend",
+      "backend": "Desarrollador Backend",
+      "mobile": "Desarrollador Móvil"
+    },
+    "skills": {
+      "frontend": "React, Angular, TypeScript, JavaScript, HTML5/CSS3, TailwindCSS, React Native",
+      "backend": "Java, Spring Boot, C# .NET, Node.js, RESTful APIs, Express.js",
+      "styling": "TailwindCSS, CSS3, Responsive Design",
+      "tools": "Git, Docker, JUnit, Maven, Postman, VS Code, IntelliJ"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Conoce más sobre mí",
+    "skillsSubtitle": "Tecnologías y herramientas con las que trabajo",
+    "interestsSubtitle": "Qué me motiva e inspira",
+    "introduction": "¡Hola! Soy Kevin, un desarrollador apasionado con amor por crear experiencias digitales excepcionales.",
+    "description": "Me especializo en tecnologías web modernas y tengo buen ojo para el diseño. Mi viaje en el desarrollo comenzó hace varios años, y he estado aprendiendo y evolucionando constantemente desde entonces.",
+    "personalInfo": {
+      "title": "Información Personal",
+      "location": "Ubicación",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "availability": "Disponibilidad",
+      "availabilityValue": "Disponible para proyectos"
+    },
+    "skills": {
+      "title": "Habilidades Técnicas",
+      "subtitle": "Tecnologías y herramientas con las que trabajo",
+      "frontend": "Desarrollo Frontend",
+      "backend": "Desarrollo Backend",
+      "tools": "Herramientas y Tecnologías",
+      "databases": "Bases de Datos"
+    },
+    "interests": {
+      "title": "Intereses y Pasatiempos",
+      "coding": "Programación y Aprendizaje",
+      "design": "Diseño UI/UX",
+      "technology": "Tecnologías Emergentes",
+      "collaboration": "Colaboración en Equipo",
+      "codingDesc": "Siempre aprendiendo nuevas tecnologías y mejores prácticas",
+      "designDesc": "Creando interfaces de usuario hermosas e intuitivas",
+      "technologyDesc": "Explorando IA, blockchain y tecnología de vanguardia",
+      "collaborationDesc": "Trabajando con equipos diversos para construir productos increíbles"
+    },
+    "competencies": {
+      "title": "Competencias Clave"
+    },
+    "languages": {
+      "title": "Idiomas"
+    },
+    "technicalInterests": {
+      "title": "Intereses Técnicos"
+    }
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "subtitle": "Una muestra de mi trabajo y logros",
+    "allProjects": "Todos los Proyectos",
+    "featured": "Destacados",
+    "categories": {
+      "all": "Todos",
+      "web": "Aplicaciones Web",
+      "mobile": "Móvil",
+      "desktop": "Escritorio",
+      "api": "APIs"
+    },
+    "filters": {
+      "technology": "Filtrar por Tecnología",
+      "category": "Filtrar por Categoría",
+      "clear": "Limpiar Filtros"
+    },
+    "empty": {
+      "title": "No se encontraron proyectos",
+      "description": "Intenta ajustar tus filtros o términos de búsqueda"
+    },
+    "count": "Mostrando {count} de {total} proyectos",
+    "projectDetails": {
+      "overview": "Descripción General",
+      "technologies": "Tecnologías Utilizadas",
+      "features": "Características Principales",
+      "challenges": "Desafíos y Soluciones",
+      "demo": "Demo en Vivo",
+      "code": "Ver Código",
+      "github": "Repositorio GitHub"
+    },
+    "data": {
+      "projects": {
+        "link-shortener-api": {
+          "title": "API de Gestión de Enlaces",
+          "description": "API RESTful para acortamiento de URLs con principios de arquitectura limpia"
+        },
+        "inventory-management-system": {
+          "title": "Sistema de Gestión de Inventario",
+          "description": "Sistema backend con arquitectura modular para operaciones de inventario"
+        },
+        "fauna-silvestre-app": {
+          "title": "App de Conservación de Fauna",
+          "description": "Aplicación móvil con funcionalidad GPS y validación de formularios"
+        }
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi trayectoria profesional y logros",
+    "workExperience": "Experiencia Laboral",
+    "education": "Educación",
+    "certifications": "Certificaciones",
+    "skillsSubtitle": "Mi experiencia y niveles de competencia",
+    "projectTech": "Tecnologías Utilizadas",
+    "verifyCertificate": "Verificar Certificado",
+    "timeline": {
+      "present": "Presente",
+      "duration": "Duración",
+      "responsibilities": "Responsabilidades Principales",
+      "achievements": "Logros"
+    },
+    "skills": {
+      "title": "Habilidades y Experiencia",
+      "technical": "Habilidades Técnicas",
+      "soft": "Habilidades Blandas",
+      "languages": "Lenguajes de Programación",
+      "frameworks": "Frameworks y Librerías"
+    },
+    "data": {
+      "experience": {
+        "1": {
+          "position": "Full-Stack Developer",
+          "company": "Mayasur Systems",
+          "location": "Chetumal, Q. Roo, Mexico",
+          "description": "Desarrollo de aplicaciones móviles y web con enfoque en rendimiento y experiencia de usuario. Contribución a la productividad del equipo mediante automatización y flujos organizados."
+        },
+        "2": {
+          "position": "Technology Intern",
+          "company": "Universidad Autónoma de Q. Roo",
+          "location": "Chetumal, Q. Roo, Mexico",
+          "description": "Construcción de sistemas de gestión de inventario y soluciones de seguimiento usando Microsoft Power Platform y SharePoint."
+        }
+      },
+      "education": {
+        "1": {
+          "degree": "Programación de Computadoras",
+          "institution": "CBTIS 214",
+          "location": "Chetumal, Q. Roo, Mexico",
+          "description": "Título técnico en Programación de Computadoras con enfoque en desarrollo de software, tecnologías web y gestión de bases de datos."
+        }
+      },
+      "certifications": {
+        "1": {
+          "name": "Spring Boot Professional",
+          "issuer": "Udemy"
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "Trabajemos juntos en tu próximo proyecto",
+    "description": "Siempre estoy interesado en nuevas oportunidades y proyectos emocionantes. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡no dudes en contactarme!",
+    "formTitle": "Enviar Mensaje",
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Dirección de Correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Error al enviar el mensaje. Por favor intenta de nuevo.",
+      "required": "Este campo es requerido",
+      "invalidEmail": "Por favor ingresa un correo válido"
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "availability": "Disponibilidad",
+      "response": "Tiempo de Respuesta",
+      "responseTime": "Dentro de 24 horas",
+      "availabilityValue": "Disponible para proyectos"
+    },
+    "placeholders": {
+      "name": "Tu nombre completo",
+      "email": "tu.email@ejemplo.com",
+      "subject": "¿De qué se trata?",
+      "message": "Cuéntame sobre tu proyecto o pregunta..."
+    },
+    "availabilityNote": "Actualmente disponible para proyectos freelance y colaboraciones",
+    "social": {
+      "title": "Sígueme",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    }
   },
   "navigation": {
     "home": "Inicio",
@@ -10,5 +231,38 @@
     "experience": "Experiencia",
     "contact": "Contacto",
     "language": "Idioma"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "retry": "Intentar de Nuevo",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "view": "Ver",
+    "download": "Descargar",
+    "share": "Compartir",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "backToTop": "Volver Arriba",
+    "highlights": "Aspectos Destacados",
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "themeMode": "Cambiar a modo {mode}",
+    "systemCurrent": "Sistema (actualmente {theme})",
+    "themeSelector": "Selector de tema",
+    "themeTitle": "Tema"
   }
 }

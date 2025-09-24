@@ -1,7 +1,228 @@
 {
   "home": {
-    "title": "Hello, I'm Kevin",
-    "subtitle": "React & .NET Developer"
+    "title": "Hello, I'm",
+    "name": "Kevin Esquivel",
+    "description": "Dedicated Full-Stack Developer with solid foundation in modern web technologies and backend systems. Experience developing applications using React, Spring Boot, and .NET with focus on clean code and best practices.",
+    "subtitle": "Full-Stack Developer",
+    "aboutDescription": "Full-Stack Developer with solid foundation in modern web technologies and backend systems. Experience in developing applications that solve real business problems.",
+    "experienceYears": "2+",
+    "availableForWork": "Available for work",
+    "viewMyWork": "View My Work",
+    "letsTalk": "Let's Talk",
+    "scrollDown": "Scroll down",
+    "aboutMe": "About Me",
+    "technicalSkills": "Technical Skills",
+    "experience": "Experience",
+    "designFocus": "Design Focus",
+    "skillsDescription": "Modern tools and practices for rapid delivery",
+    "experienceDescription": "years of experience building scalable web applications and collaborating with cross-functional teams",
+    "designDescription": "I believe great code should be paired with exceptional user experience and beautiful, intuitive interfaces",
+    "featuredProjects": "Featured Projects",
+    "projectsSubtitle": "A selection of projects I'm most proud of",
+    "projectDescription": "A brief description of this amazing project and the technologies used to build it",
+    "viewAllProjects": "View All Projects",
+    "letsWorkTogether": "Let's Work Together",
+    "contactDescription": "Have a project in mind? I'd love to hear about it. Let's create something amazing together",
+    "getInTouch": "Get In Touch",
+    "roles": {
+      "fullStack": "Full Stack Developer",
+      "frontend": "Frontend Specialist",
+      "backend": "Backend Developer",
+      "mobile": "Mobile Developer"
+    },
+    "skills": {
+      "frontend": "React, Angular, TypeScript, JavaScript, HTML5/CSS3, TailwindCSS, React Native",
+      "backend": "Java, Spring Boot, C# .NET, Node.js, RESTful APIs, Express.js",
+      "styling": "TailwindCSS, CSS3, Responsive Design",
+      "tools": "Git, Docker, JUnit, Maven, Postman, VS Code, IntelliJ"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "skillsSubtitle": "Technologies and tools I work with",
+    "interestsSubtitle": "What drives and inspires me",
+    "introduction": "Hello! I'm Kevin, a passionate developer with a love for creating exceptional digital experiences.",
+    "description": "I specialize in modern web technologies and have a keen eye for design. My journey in development started several years ago, and I've been constantly learning and evolving ever since.",
+    "personalInfo": {
+      "title": "Personal Information",
+      "location": "Location",
+      "email": "Email",
+      "phone": "Phone",
+      "availability": "Availability",
+      "availabilityValue": "Available for projects"
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "subtitle": "Technologies and tools I work with",
+      "frontend": "Frontend Development",
+      "backend": "Backend Development",
+      "tools": "Tools & Technologies",
+      "databases": "Databases"
+    },
+    "interests": {
+      "title": "Interests & Hobbies",
+      "coding": "Coding & Learning",
+      "design": "UI/UX Design",
+      "technology": "Emerging Technologies",
+      "collaboration": "Team Collaboration",
+      "codingDesc": "Always learning new technologies and best practices",
+      "designDesc": "Creating beautiful and intuitive user interfaces",
+      "technologyDesc": "Exploring AI, blockchain, and cutting-edge tech",
+      "collaborationDesc": "Working with diverse teams to build amazing products"
+    },
+    "competencies": {
+      "title": "Core Competencies"
+    },
+    "languages": {
+      "title": "Languages"
+    },
+    "technicalInterests": {
+      "title": "Technical Interests"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "A showcase of my work and achievements",
+    "allProjects": "All Projects",
+    "featured": "Featured",
+    "categories": {
+      "all": "All",
+      "web": "Web Apps",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "api": "APIs"
+    },
+    "filters": {
+      "technology": "Filter by Technology",
+      "category": "Filter by Category",
+      "clear": "Clear Filters"
+    },
+    "empty": {
+      "title": "No projects found",
+      "description": "Try adjusting your filters or search terms"
+    },
+    "count": "Showing {count} of {total} projects",
+    "projectDetails": {
+      "overview": "Overview",
+      "technologies": "Technologies Used",
+      "features": "Key Features",
+      "challenges": "Challenges & Solutions",
+      "demo": "Live Demo",
+      "code": "View Code",
+      "github": "GitHub Repository"
+    },
+    "data": {
+      "projects": {
+        "link-shortener-api": {
+          "title": "Link Management API",
+          "description": "RESTful API for URL shortening with clean architecture principles"
+        },
+        "inventory-management-system": {
+          "title": "Inventory Management System",
+          "description": "Backend system with modular architecture for inventory operations"
+        },
+        "fauna-silvestre-app": {
+          "title": "Wildlife Conservation App",
+          "description": "Mobile application with GPS functionality and form validation"
+        }
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey and achievements",
+    "workExperience": "Work Experience",
+    "education": "Education",
+    "certifications": "Certifications",
+    "skillsSubtitle": "My expertise and proficiency levels",
+    "projectTech": "Technologies Used",
+    "verifyCertificate": "Verify Certificate",
+    "timeline": {
+      "present": "Present",
+      "duration": "Duration",
+      "responsibilities": "Key Responsibilities",
+      "achievements": "Achievements"
+    },
+    "skills": {
+      "title": "Skills & Expertise",
+      "technical": "Technical Skills",
+      "soft": "Soft Skills",
+      "languages": "Programming Languages",
+      "frameworks": "Frameworks & Libraries"
+    },
+    "data": {
+      "experience": {
+        "1": {
+          "position": "Full-Stack Developer",
+          "company": "Mayasur Systems",
+          "location": "Chetumal, Q. Roo, Mexico",
+          "description": "Developing mobile and web applications with focus on performance and user experience. Contributing to team productivity through automation and organized workflows."
+        },
+        "2": {
+          "position": "Technology Intern",
+          "company": "Universidad Autónoma de Q. Roo",
+          "location": "Chetumal, Q. Roo, Mexico",
+          "description": "Built inventory management systems and tracking solutions using Microsoft Power Platform and SharePoint."
+        }
+      },
+      "education": {
+        "1": {
+          "degree": "Computer Programming",
+          "institution": "CBTIS 214",
+          "location": "Chetumal, Q. Roo, Mexico",
+          "description": "Technical degree in Computer Programming with focus on software development, web technologies, and database management."
+        }
+      },
+      "certifications": {
+        "1": {
+          "name": "Spring Boot Professional",
+          "issuer": "Udemy"
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together on your next project",
+    "description": "I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!",
+    "formTitle": "Send Message",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again.",
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address"
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "availability": "Availability",
+      "response": "Response Time",
+      "responseTime": "Within 24 hours",
+      "availabilityValue": "Available for projects"
+    },
+    "placeholders": {
+      "name": "Your full name",
+      "email": "your.email@example.com",
+      "subject": "What's this about?",
+      "message": "Tell me about your project or question..."
+    },
+    "availabilityNote": "Currently available for freelance projects and collaborations",
+    "social": {
+      "title": "Follow Me",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    }
   },
   "navigation": {
     "home": "Home",
@@ -10,5 +231,38 @@
     "experience": "Experience",
     "contact": "Contact",
     "language": "Language"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "close": "Close",
+    "open": "Open",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "download": "Download",
+    "share": "Share",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "next": "Next",
+    "previous": "Previous",
+    "backToTop": "Back to Top",
+    "highlights": "Highlights",
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "themeMode": "Switch to {mode} mode",
+    "systemCurrent": "System (currently {theme})",
+    "themeSelector": "Theme selector",
+    "themeTitle": "Theme"
   }
 }
